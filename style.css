@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #ffffff;
+    margin: 0; 
+    padding:0;
+    overflow-x: hidden;
+    background-color: rgb(2, 2, 2);
+}
+
+img{
+    height: 10vw;
+    width: 10vh;
+}
+
+.main{
+    display: flex;
+    height: 45vh;
+    justify-content: center;
+    /* gap: 40px; */
+    /* align-items: center; */
+}
+.content{
+    /* border: 2px solid black; */
+    text-align: center;
+    /* padding-top: 30px; */
+    width: 40%;
+    height: 50%;
+    color: #ffffff;
+}
+.content>h3{
+    /* margin-top: 30px; */
+    font-size: 1.5vw;
+}
+
+.content>p{
+    margin-top: 30px;
+    font-size: 1vw;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 0;
+}
+.contenti{
+    /* border: 2px solid rgb(170, 3, 3); */
+    width: 250px;
+    border-radius:20px;
+    text-align: center;
+    height: 70%;
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
+      ),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs8kxSUX4J0PyDpB24DZ-NqPvZXvfpyRIMlw&s);
+      background-size: 100% 100%;
+      box-shadow: 5px 5px 20px 2px rgb(119, 118, 118);
+}
+
+.c2{
+    background-image: url(https://4x4works.b-cdn.net/app/uploads/2021/01/OM-KIT023-CE-1.jpg?width=800&quality=85);
+}
+.c3{
+    background-image: url(https://rbptires.com/wp-content/uploads/black-hardrock-off-road-wheels-with-rbp-tires-2.jpg);
+}
+
+
+button{
+    width: 10vw;
+    height: 40px;
+    color: white;
+    background-color: rgba(255, 254, 254, 0.01);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 1s;
+}
+.b2{
+    background-color: #225ac9;
+    border: 1px solid #225ac9;
+    color: black;
+}
+.b1:hover{
+    background-color: white;
+    color: black;
+    /* border: 3px solid rgb(0, 0, 0); */
+}
+
+.b2:hover{
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(244, 244, 249);
+    border: 3px solid rgb(0, 0, 255);
+}
+
+
+@media (max-width: 1200px) {
+    .main{
+        gap: 20px;
+        height: 50vh;
+    }
+    .contenti{
+        height: 30vh;
+        width: 200px;
+        /* padding-top: 80px; */
+    }
+    .content{
+        width: 50%;
+        padding-top: 0px;
+    }
+    .content>h3{
+        font-size: 4vw;
+    }
+    .content>p{
+        font-size: 1.5vw;
+    }
+    button{
+        width: 15vw;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .main{
+        flex-direction:column ;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 0px;
+        height: 75vh;
+    }
+    .contenti{
+        height: 25vh;
+        width: 200px;
+    }
+    .content{
+        width: 80%;
+    }
+    .content>h3{
+        margin-top: 30px;
+        font-size: 5vw;
+    }
+    .content>p{
+        font-size: 3vw;
+    }
+    button{
+        width: 22vw;
+    }
+}
+
+
